@@ -91,10 +91,10 @@ class ROCdataset():
         im_feats = []
         for im in images:
             if self.train:
-                f = np.load(f'../../../AREL/dataset/resnet_features/fc/train/{im}.npy')
+                f = np.load(f'../data/AREL/dataset/resnet_features/fc/train/{im}.npy')
                 im_feats.append(f)
             else:
-                f = np.load(f'../../../AREL/dataset/resnet_features/fc/test/{im}.npy')
+                f = np.load(f'../data/AREL/dataset/resnet_features/fc/test/{im}.npy')
                 im_feats.append(f)             
         # im_feats = self.feats[i]     
         im_feats = torch.tensor(im_feats)   
