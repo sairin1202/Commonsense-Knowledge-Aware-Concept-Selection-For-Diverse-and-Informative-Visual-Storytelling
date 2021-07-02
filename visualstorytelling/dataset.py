@@ -77,7 +77,6 @@ class ROCdataset():
         return im_feats, " "+" ".join(texts), keywords
 
     def __len__(self):
-        return 10
         return self.data_len
 
 
