@@ -63,8 +63,8 @@ def train_model(transformer, dataset, epochs, criterion, optimizer):
 def main():
     # random_seeding()
     parser = argparse.ArgumentParser()
-    parser.add_argument('-src_data', type=str, default='data/train.pkl')
-    parser.add_argument('-test_src_data', type=str, default='data/test.pkl')
+    parser.add_argument('-src_data', type=str, default='../data/concept_selection/train.pkl')
+    parser.add_argument('-test_src_data', type=str, default='../data/concept_selection/test.pkl')
 
     parser.add_argument('-epochs', type=int, default=101)
     parser.add_argument('-d_model', type=int, default=300)
