@@ -1,6 +1,24 @@
 # Commonsense-Knowledge-Aware-Concept-Selection-For-Diverse-and-Informative-Visual-Storytelling
 The implement of Commonsense Knowledge Aware Concept Selection For Diverse and Informative Visual Storytelling
 
-data can be found in https://drive.google.com/file/d/1rljuIKB03IhTkw2DLqmxgTZe4hpDvvVE/view?usp=sharing
+ https://drive.google.com/file/d/1rljuIKB03IhTkw2DLqmxgTZe4hpDvvVE/view?usp=sharing
 
-The author will clean the code soon.
+This repository consists of two parts:
+1) Concept Selection
+2) Visual Storytelling
+
+
+## Concept Selection
+In the paper, we use the concept selection to first select the concepts for the story generation.
+codes are involved under concept_selection/
+run python train.py to train the model.
+
+
+## Visual Storytelling
+In the paper, we use the concepts and the image as inputs to generate the story.
+We use BART as pretrained model.
+codes are involved under visualstorytelling/
+run python train.py to train the model.
+
+## Data
+All the data used in the project can be found in 
